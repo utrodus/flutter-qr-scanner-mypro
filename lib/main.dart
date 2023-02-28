@@ -1,19 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_qr_scanner_mypro/src/app.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'QR Scanner - MyPro',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-    );
-  }
+  runApp(const App());
 }
