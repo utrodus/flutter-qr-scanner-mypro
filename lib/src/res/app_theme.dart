@@ -23,16 +23,20 @@ ThemeData get appTheme => ThemeData(
       bottomNavigationBarTheme: bottomNavigatonBarThemeData,
     );
 
-AppBarTheme get appBarThemeData => const AppBarTheme(
-      systemOverlayStyle: SystemUiOverlayStyle(
-        statusBarIconBrightness: Brightness.light,
-        statusBarBrightness: Brightness.light,
-        statusBarColor: AppColors.primary,
-      ),
-      centerTitle: true,
-      backgroundColor: AppColors.background,
-      elevation: 1,
-    );
+AppBarTheme get appBarThemeData => AppBarTheme(
+    systemOverlayStyle: const SystemUiOverlayStyle(
+      statusBarIconBrightness: Brightness.light,
+      statusBarBrightness: Brightness.light,
+      statusBarColor: AppColors.primary,
+    ),
+    centerTitle: true,
+    backgroundColor: AppColors.background,
+    elevation: 1,
+    titleTextStyle: TextStyle(
+      color: AppColors.secondary,
+      fontSize: 16,
+      fontWeight: semiBold,
+    ));
 
 ElevatedButtonThemeData get elevatedButtonThemeData => ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
@@ -49,9 +53,13 @@ ElevatedButtonThemeData get elevatedButtonThemeData => ElevatedButtonThemeData(
     );
 
 BottomNavigationBarThemeData get bottomNavigatonBarThemeData =>
-    const BottomNavigationBarThemeData(
+    BottomNavigationBarThemeData(
       elevation: 5,
       backgroundColor: AppColors.background,
       unselectedItemColor: AppColors.grey,
       selectedItemColor: AppColors.primary,
+      selectedLabelStyle: TextStyle(
+        fontWeight: semiBold,
+        fontSize: 13,
+      ),
     );

@@ -3,7 +3,10 @@ import 'package:flutter_qr_scanner_mypro/src/res/constant/assets_path.dart';
 import 'package:flutter_qr_scanner_mypro/src/res/tokens/app_colors.dart';
 import 'package:flutter_qr_scanner_mypro/src/res/tokens/app_text_styles.dart';
 import 'package:flutter_qr_scanner_mypro/src/utils/extensions/extension.dart';
+import 'package:go_router/go_router.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+
+import '../../utils/router/router_names.dart';
 
 class OnboardingScreen extends StatelessWidget {
   OnboardingScreen({Key? key}) : super(key: key);
@@ -32,14 +35,14 @@ class OnboardingScreen extends StatelessWidget {
                 ),
           ),
           done: const Text(
-            "Get Started",
+            "Scan Now",
             style: TextStyle(fontWeight: FontWeight.w700),
           ),
           onDone: () {
-            // On Done button pressed
+            context.pushReplacementNamed(qrScannerRoute);
           },
           onSkip: () {
-            // On Skip button pressed
+            context.pushReplacementNamed(qrScannerRoute);
           },
           dotsDecorator: DotsDecorator(
             activeColor: AppColors.primary,
@@ -97,14 +100,14 @@ class OnboardingScreen extends StatelessWidget {
                       height: 35,
                     ),
                     Text(
-                      "Unlock Information with Ease",
+                      "Scan QR Code URL with Ease",
                       style: Theme.of(context).textTheme.displaySmall,
                     ),
                     const SizedBox(
                       height: 8,
                     ),
                     Text(
-                      "Our QR Code Scanner app makes it easy\nfor you to unlock information",
+                      "Our QR Code Scanner app makes it easy for you to Scan QR Code URL and directly and open it in app webview .",
                       style: Theme.of(context)
                           .textTheme
                           .headlineSmall!
@@ -163,14 +166,14 @@ class OnboardingScreen extends StatelessWidget {
                       height: 35,
                     ),
                     Text(
-                      "Discover More with Every Scan",
+                      "Exclusive for Scan QR Code",
                       style: Theme.of(context).textTheme.displaySmall,
                     ),
                     const SizedBox(
                       height: 8,
                     ),
                     Text(
-                      "Whether it's to access exclusive content,\nredeem a voucher or follow a link.",
+                      "Whether it's to access exclusive content, redeem a voucher or follow a link.",
                       style: Theme.of(context)
                           .textTheme
                           .headlineSmall!

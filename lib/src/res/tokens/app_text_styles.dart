@@ -59,14 +59,4 @@ TextTheme get textTheme => TextTheme(
         height: 1.5,
         fontWeight: semiBold,
       ),
-      bodyMedium: TextStyle(
-        color: AppColors.secondary,
-        fontSize: 13,
-        fontWeight: medium,
-      ),
-      bodySmall: TextStyle(
-        color: AppColors.secondary,
-        fontSize: 12,
-        fontWeight: regular,
-      ),
     );
