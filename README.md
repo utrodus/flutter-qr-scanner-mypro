@@ -18,8 +18,8 @@ To use the QR Code Scanner app, simply launch the app and point the camera at a 
 
 This app was built using the following technologies:
 
-- Flutter
-- Dart
+- Flutter 3.7.5 • channel stable
+- Dart SDK version: 2.19.2 (stable)
 
 ## Conclusion
 
