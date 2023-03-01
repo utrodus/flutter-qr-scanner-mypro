@@ -18,7 +18,7 @@ final routerConfigs = GoRouter(
       path: "/",
       pageBuilder: (context, state) => MaterialPage<void>(
         key: state.pageKey,
-        child: const OnboardingScreen(),
+        child: OnboardingScreen(),
       ),
     ),
     GoRoute(
