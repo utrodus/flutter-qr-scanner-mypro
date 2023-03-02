@@ -1,6 +1,6 @@
 # QR Code Scanner App
 
-This application is the result of a project created as a part of my job application process at PT Mypro Solusindo Informatika. The app is designed to scan valid QR codes and perform certain actions based on the type of QR code scanned.
+This application is the result of a project created as a part of my job application process at PT Mypro Solusindo Informatika. 
 
 To avoid fat apk, I build apk with the command ``` flutter build apk --split-per-abi ``` so it will produce 3 files, namely:
 
